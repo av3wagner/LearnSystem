@@ -1,0 +1,27 @@
+CD C:\IPYNBgesamt2025\NBSamples\Streamlit_Render\my_streamlit_app
+streamlit run app.py
+! streamlit run app.py & sleep 3 && npx localtunnel --port 8501
+streamlit run app.py sleep 3 npx localtunnel --port 8502
+
+streamlit run app.py sleep 3 OK!
+streamlit run app.py npx localtunnel --port 8501
+streamlit run app.py --server.port 8502 OK!
+
+streamlit run appRender.py
+
+titanic.csv
+Iris.csv
+heard.csv
+
+CD C:\IPYNBgesamt2025\NBSamples\Streamlit_Render
+
+git clone https://github.com/av3wagner/MyStreamlitRender
+
+
+cd C:\IPYNBgesamt2025\NBSamples\Streamlit_Render\MyStreamlitRender
+streamlit run Main_Page.py
+
+npx kill-port 8502
+
+CD C:\AsniFen2025\modules
+python KillProcess.py
