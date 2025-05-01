@@ -11,14 +11,13 @@ from os import listdir
 from os.path import isfile, join
 import glob
 
+path = os.getcwd()
+st.write(path)
+
 #os.chdir("/mount/LearnSystem/")
 #sys.path.append("/mount/LearnSystem/")
 #os.chdir("C:\AW75\LearnSystem\")
 #sys.path.append("C:\AW75\LearnSystem\")
-
-path = os.getcwd()
-st.write(path)
-
 #outf=os.path.join(path, "assets/WagnerFoto.jpg")
 #st.write(outf)
 #options = "Home"
