@@ -11,8 +11,8 @@ from os import listdir
 from os.path import isfile, join
 import glob
 
-os.chdir("/mount/src/LearnSystem/")
-sys.path.append("/mount/src/LearnSystem/")
+os.chdir("/mount/LearnSystem/")
+sys.path.append("/mount/LearnSystem/")
 path = os.getcwd()
 st.write(path)
 outf=os.path.join(path, "assets/WagnerFoto.jpg")
