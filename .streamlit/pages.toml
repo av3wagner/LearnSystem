@@ -1,0 +1,63 @@
+[[pages]]
+name = "Введение в Обучающую систему"
+path = "pages/page1.py"
+
+[[pages]]
+name = "Dataset"
+icon = "🗂"
+path = "pages/page2.py"
+
+[[pages]]
+name = "Dataframe"
+icon = "📋"
+path = "pages/page3.py"
+
+[[pages]]
+name = "Exploratory Data"
+icon = "📊"
+path = "pages/page4.py"
+
+[[pages]]
+name = "Feature Engineering"
+icon = "⚙️"
+path = "pages/page5.py"
+
+[[pages]]
+name = "Pipeline"
+icon = "🪢"
+path = "pages/page6.py"
+
+[[pages]]
+name = "Model Building"
+icon = "🤖"
+path = "pages/page7.py"
+
+[[pages]]
+name = "EDA-ML Reports"
+icon = "📄"
+path = "pages/page8.py"
+
+[[pages]]
+name = "Clinical Reports"
+icon = "📜"
+path = "pages/page9.py"
+
+[[pages]]
+name = "Scientific Reports"
+icon = "🎓"
+path = "pages/page10.py"
+
+[[pages]]
+name = "Statistics Samples"
+icon = "🎯"
+path = "pages/page11.py"
+
+[[pages]]
+name = "ML Samples"
+icon = "🎯"
+path = "pages/page12.py"
+
+[[pages]]
+name = "User private codes"
+icon = "🎯"
+path = "pages/page13.py"
