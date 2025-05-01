@@ -13,6 +13,9 @@ import glob
 
 #os.chdir("/mount/LearnSystem/")
 #sys.path.append("/mount/LearnSystem/")
+os.chdir("C:\AW75\LearnSystem\")
+sys.path.append("C:\AW75\LearnSystem\")
+
 path = os.getcwd()
 st.write(path)
 outf=os.path.join(path, "assets/WagnerFoto.jpg")
