@@ -11,6 +11,26 @@ from os import listdir
 from os.path import isfile, join
 import glob
 
+os.chdir("/mount/src/LearnSystem/")
+sys.path.append("/mount/src/LearnSystem/")
+path = os.getcwd()
+st.write(path)
+outf=os.path.join(path, "assets/WagnerFoto.jpg")
+st.write(outf)
+
+#options = "Home"
+#localp = "C:/Temp"
+#st.write(os.path.join(localp, "Test.docx")) 
+#profile  = Image.open('data/AWagner.JPG')
+#profile2 = Image.open('AWprofil.jpg')
+#AWbrigade = Image.open('AWbrigade.jpg')
+#logo = Image.open('data/KI3.jpg')
+#be1 = Image.open('AutoitGuiBericht.jpg')
+#be2 = Image.open('AutoitGui2.jpg')
+#be3 = Image.open('AutoitGui4.jpg')
+#be4 = Image.open('AutoitGui5.jpg')
+
+
 st.set_page_config(
     page_title="Asfendijarov Kazakh National Medical University «АСНИ-МЕД»",
     page_icon="🧊",
@@ -155,10 +175,10 @@ __*Материалы этого проекта могут служить хор
 __Берлин, 16\.02\.2025__
 '''
 
-with open("./assets/WagnerFoto.jpg ", "rb") as img_file:    
+with open("/assets/WagnerFoto.jpg ", "rb") as img_file:    
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
 
-with open("./assets/ASFEN_LOGO3.jpg", "rb") as img_file:
+with open("/assets/ASFEN_LOGO3.jpg", "rb") as img_file:
         img2 = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()        
 
 
