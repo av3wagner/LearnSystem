@@ -12,7 +12,7 @@ from os.path import isfile, join
 import glob
 
 st.set_page_config(
-    page_title="Asfendijarov Kazakh National Medical University «АСНИ-МЕД»",
+    page_title="Asfendijarov Kazakh National Medical University «Learn-System»",
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
