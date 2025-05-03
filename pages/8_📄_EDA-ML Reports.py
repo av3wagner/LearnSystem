@@ -14,5 +14,5 @@ from os.path import isfile, join
 import glob
 import os
 import subprocess
-import modules.ReadPath as m
+import ./modules.ReadPath as m
 m.select_file() 
