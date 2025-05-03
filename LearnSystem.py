@@ -208,7 +208,7 @@ def ASNISystem():
 
 #Информиация об авторе    
 def welcome():
-    with open("./WagnerFoto.jpg", "rb") as img_file:    
+    with open("./AWagnerFoto.jpg", "rb") as img_file:    
         img01 = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
     col1, col2, col3 = st.columns( [1, 40, 1])
     with col2:  
