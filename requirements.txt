@@ -14,3 +14,4 @@ docx
 dash
 pip
 psutil
+AppOpener
