@@ -22,7 +22,7 @@ st.set_page_config(
         'About': "# This is a header. This is an *extremely* cool app!"
     }
 )
-MdFileToStreamlit = "assets/AWresume.md"
+MdFileToStreamlit = "AWresume.md"
 
 Part1 = '''## Краткое описание системы
 
@@ -229,7 +229,7 @@ def welcome():
         unsafe_allow_html=True)
         
         st.markdown("")
-        MdFileToStreamlit("assets/AWresume.md")
+        MdFileToStreamlit("AWresume.md")
 
 with open("./ASFEN_LOGO3.jpg", "rb") as img_file:    
         img2 = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -281,7 +281,7 @@ with st.expander("2. Собрание избранных статей из об�
     col1, col2, col3 = st.columns( [1, 40, 1])
     with col2:  
         st.markdown("")
-        MdFileToStreamlit("assets/ArtikelList.md")
+        MdFileToStreamlit("ArtikelList.md")
 
 with st.expander("3. Информиация об авторе АСНИ-МЕД"):
     welcome()
