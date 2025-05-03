@@ -13,3 +13,4 @@ lightgbm
 docx
 dash
 pip
+psutil
