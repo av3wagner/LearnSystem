@@ -15,7 +15,4 @@ import glob
 import os
 import subprocess
 import modules.ReadPath as m
-
 m.select_file() 
-
-
