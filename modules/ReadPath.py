@@ -17,12 +17,35 @@ import glob
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+def select_file():
+    parent_path = 'modules/programs'
+    fileList = []
+    fileList = listdir(parent_path)
+    onlyfiles = [f for f in fileList if isfile(join(parent_path, f)) and  (f.endswith(".py"))]   
+    option = st.selectbox('Выберите программу для исполнения', onlyfiles)
+    file_location=os.path.join(parent_path, option) 
+    if file_location.find('.py') > 0:
+        st.write("Для исполнения выбрана программа: " + option)
+        st.write("Путь к программе: " + file_location)
+        if st.button('Запустите выбранняю программу'):
+            if option == "EDAReports.py":
+                page9()
+                st.write('Программа закончила работу!')
+            else:   
+                execute_python_file(file_location)
+            
+        if st.button('Покажите выбранняю программу'):    
+            with open(file_location, 'r', encoding='utf-8') as f:
+                 lines_to_display = f.read()
+            st.code(lines_to_display, "python")  
+            
 def change_param(x):
     if(x==1):
         return 'yes'
     return 'no'
         
 def page9():
+    st.write('Программа page9() начинает работу!')
     with open("./EDA01.jpg", "rb") as img_file:    
             img01 = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
             
@@ -717,27 +740,6 @@ def execute_python_file(file_path):
             exec(python_code)
     except FileNotFoundError:
         st.markdown(f"Error: The file '{file_path}' does not exist.")
-
-def select_file():
-    parent_path = 'modules/programs'
-    fileList = []
-    fileList = listdir(parent_path)
-    onlyfiles = [f for f in fileList if isfile(join(parent_path, f)) and  (f.endswith(".py"))]   
-    option = st.selectbox('Выберите программу для исполнения', onlyfiles)
-    file_location=os.path.join(parent_path, option) 
-    if file_location.find('.py') > 0:
-        st.write("Для исполнения выбрана программа: " + option)
-        if st.button('Запустите выбранняю программу'):
-            if option == "EDAReports.py":
-                page9()
-                st.write('Программа закончила работу!')
-            else:   
-                execute_python_file(file_location)
-            
-        if st.button('Покажите выбранняю программу'):    
-            with open(file_location, 'r', encoding='utf-8') as f:
-                 lines_to_display = f.read()
-            st.code(lines_to_display, "python")    
 
 def open_file_selection_doc():
     parent_path = '/mount/src/asnifen/assets'
