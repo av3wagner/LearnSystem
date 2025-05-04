@@ -24,15 +24,16 @@ def select_file():
     onlyfiles = [f for f in fileList if isfile(join(parent_path, f)) and  (f.endswith(".py"))]   
     option = st.selectbox('Выберите программу для исполнения', onlyfiles)
     file_location=os.path.join(parent_path, option) 
+    st.write("Путь к программе: " + file_location)
     if file_location.find('.py') > 0:
         st.write("Для исполнения выбрана программа: " + option)
-        st.write("Путь к программе: " + file_location)
+        
         if st.button('Запустите выбранняю программу'):
             if option == "EDAReports.py":
-                page9()
+                #page9()
                 st.write('Программа закончила работу!')
             else:   
-                execute_python_file(file_location)
+                #execute_python_file(file_location)
             
         if st.button('Покажите выбранняю программу'):    
             with open(file_location, 'r', encoding='utf-8') as f:
